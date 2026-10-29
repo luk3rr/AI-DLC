@@ -17,7 +17,7 @@ Purpose: take verified construction output to production safely and close the lo
 
 ## Stage loop
 
-Same loop as the other phases (plan → ask → write → self-check → gate → record; see `protocols.md`), writing files into `.aidlc/<id>/operations/` and IaC/pipeline config into the repo. Questions go through AskUserQuestion with options + Other (`protocols.md` §Asking the user). Use Mermaid diagrams for pipelines and promotion/rollback paths (`flowchart LR`), environment/network topology (`flowchart` with subgraphs), and escalation flows. Depth Minimal: one short page per stage.
+Same loop as the other phases (plan → ask → write → self-check → gate → record; see `protocols.md`), writing files into `.aidlc/<id>/operations/` and IaC/pipeline config into the repo. Questions go through AskUserQuestion with options + Other (`protocols.md` §Asking the user). Tables need a blank line before the header row (`protocols.md` §Markdown tables). Use Mermaid diagrams for pipelines and promotion/rollback paths (`flowchart LR`), environment/network topology (`flowchart` with subgraphs), and escalation flows. Depth Minimal: one short page per stage.
 
 ## Safety model — the key difference of this phase
 

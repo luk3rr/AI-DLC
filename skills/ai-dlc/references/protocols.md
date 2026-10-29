@@ -43,6 +43,16 @@ X) Other: [Answer]:
 
 Rules (both modes): one decision per question; no leading or compound questions; ask the minimum needed for the depth level (Minimal ≤5, Standard as needed, Comprehensive exhaustive); record each answered question in the audit log with the user's own words; unanswered ⇒ do not proceed (or record an explicit `ASSUMPTION` the human must confirm at the gate).
 
+## Markdown tables (must render)
+
+Every table written to `.aidlc/` files must render in GitHub/IDEs. A table directly after a paragraph, bold label (`**Pontos de build**`) or list item is **not** parsed as a table — it shows as raw pipes. Rules:
+
+- **Blank line before the header row** (and after the last row). Never put the header right under a label or sentence line.
+- Header row, then a separator row (`|---|---|`) with the same number of columns; every body row has that same column count.
+- Escape literal pipes inside cells as `\|`; keep each row on a single line (use `<br>` for line breaks in a cell).
+- Put trailing `[src: …]` tags inside a cell (or a dedicated column), not after the closing pipe.
+- Self-check before saving: scan each table for a preceding blank line.
+
 ## Diagrams (Mermaid)
 
 Prefer a diagram wherever structure, flow or relationships are involved — a picture exposes gaps that prose hides, and the human validates it faster. Use fenced ```` ```mermaid ```` blocks inside the Markdown files (render in GitHub/IDEs), keep each diagram small (≤~15 nodes; split otherwise), label edges, and put a one-line caption/legend under it. The diagram and the text must agree; update both on change.
