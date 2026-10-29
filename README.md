@@ -62,7 +62,8 @@ Profiles: enterprise, feature, mvp, classic, workshop, poc, express, bugfix, ref
 ```
 skills/<skill>/SKILL.md            # loaded on invocation
 skills/<skill>/references/         # loaded on demand (shared protocols/templates/personas/profiles live in ai-dlc/references)
-install.sh
+install.sh                         # symlink/copy the skills into ~/.claude/skills or a project
+scripts/validate.sh                # structural checks (also run by CI)
 ```
 
 ## Relationship to upstream
@@ -71,6 +72,6 @@ A lightweight, Markdown-only distillation of the methodology and of [awslabs/aid
 
 Sources: [AWS DevOps Blog](https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/), [AWS Builder Center](https://builder.aws.com/content/3KjWpM4sqd5f0zjUtE67OfUa7rk/ai-driven-development-life-cycle-ai-dlc-on-aws-a-new-approach-to-software-engineering), upstream docs.
 
-## Contributing, license
+## Disclaimer
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) (run `./scripts/validate.sh` before a PR), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md). Licensed under the [MIT License](LICENSE). The AI-DLC methodology originates from AWS; this project is an independent implementation and is not affiliated with or endorsed by AWS or Anthropic.
+The AI-DLC methodology originates from AWS; this project is an independent implementation and is not affiliated with or endorsed by AWS or Anthropic. Run `./scripts/validate.sh` before opening a PR.

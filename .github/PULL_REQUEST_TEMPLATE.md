@@ -7,4 +7,3 @@
 ## Checklist
 - [ ] Invariants preserved (gates, no fabrication, failures halt, fresh approval for outward actions)
 - [ ] Cross-references updated in all skills / `templates.md`
-- [ ] `CHANGELOG.md` updated
